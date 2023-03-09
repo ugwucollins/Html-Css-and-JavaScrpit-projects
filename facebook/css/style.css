@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: rgba(211, 211, 211, 0.432);
+   box-sizing: border-box;
+   min-height: 90vh;
+}
+
+
+#p10{
+    border: none;
+    border-radius: 50%;
+}
+ #f1 #p4{
+    
+    display: flex;
+    white-space: nowrap;
+    column-gap: 1.5em;
+}
+
+#f1{
+    background-color: white;
+    min-height: auto;
+    width: 2.5em;
+    border: none;
+    border-radius: 0.6em;
+}
+
+
+
+header a:hover, header a :focus{
+    background-color: blue;
+     text-decoration: underline;
+ }
+
+nav  a:hover, 
+nav a:focus{
+    background-color: blue;
+} 
+
+header #p3 img{
+
+    border:none;
+    border-radius: 40em;
+}
+#f2 img{
+    border: none;
+    border-radius: 40em;
+}
+.home button{
+    height: 1.3em;
+    width: 2em;
+    font-size: 1em;
+    background-color:rgba(211, 211, 211, 0.973);
+    border: none;
+    border-radius: 50%;
+}
+#f2 input{
+    background-color: rgba(211, 211, 211, 0.226);
+    width: 50em;
+    height: 2em;
+    border: none;
+    border-radius: 20em;
+}
+#f2  .cook{
+     grid-auto-flow:row;
+   gap: 3em;
+   word-spacing: 4em;
+}
+#f2{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    background-color: white;
+    max-height: 10em;
+    width: 30em;
+    border: none;
+    border-radius: 0.5em;
+}
+.lock img{
+    border: none;
+    border-radius: 10em;
+}
+#f3{
+    background-color: white;
+    height: 7em;
+    width: 30em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+}
+#f4{
+    width: 30em;
+    background-color:white;
+    border: none;
+    white-space: pre-line;
+}
+#f5 img{
+    font-size: 1em;
+     
+     margin-left: 3em;
+     word-spacing: 10em;
+}
+#f5{
+    /* box-shadow: 10em; */
+    width: 30.1em;
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 0.4em;
+}
+.menu #f5 img{
+/*     border:1px solid #ccc; */
+    border-radius: 5em;
+}
+.home{
+    white-space: pre-line;
+    font-size: 1.2em;
+ }   
+ .cocoa{
+    width: 10em;
+    background-color: black;
+ }
+ 
+header input{
+    background-color: rgb(192, 192, 192, 0.267);
+    width: 16rem;
+    height: 2em;
+    border: none;
+    border-radius: 20em;
+}
+
+header{
+    margin-bottom: 2em;
+    max-height: 3.7em;
+    background-color:white;
+    display: grid;
+    grid-auto-flow:column;
+   gap: 1em;
+   word-spacing: 1.5em;
+}
+
+.container{
+    display: grid;
+    grid-auto-flow:column;
+   gap: 6.5em;  
+}
+
+ .lock button{
+     height: 1.3em;
+     width: 2em;
+     font-size: 1em;
+     background-color:rgba(211, 211, 211, 0.363);
+     border: none;
+ }
+ 
+#p1 img{
+    border: none;
+    border-radius: 50%;
+} 
+
+nav img{
+    border: none;
+    border-radius: 10em;
+}
+.contact{
+    background-color: rgba(165, 42, 42, 0);
+    width: 25em;
+}
+ #p2{
+    margin-right: 8.9em;
+    display: grid;
+    grid-auto-flow:column;
+   gap:4em;
+ }
+ #p3{
+    display: grid;
+    grid-auto-flow:column;
+   gap: 0.8em;
+ }
+nav img{
+    border: none;
+    border-radius: 8em;
+}
+.POOL{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.POOL img{
+    width: 65px;
+    margin-right: 10px;
+}
+ 
+
+.SOOL{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    line-height: 0em;
+}
+
+.SOOL img{
+    line-height: 0em;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.cook{
+    word-spacing: 4em;
+}
+
+.SOOLs{
+    width: 470px;
+    display: flex;
+    align-items: center;
+    line-height: 0em;
+}
+
+.gift{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+}
+
+#b1{
+    background-color: blue;
+    color: white;
+    margin-left: 5em;
+    width: 6.5em;
+    height: 2.4em;
+    border: none;
+    border-radius: 0.4em;
+}
+ 
+#b2{
+    background-color: rgba(211, 211, 211, 0.548);
+    margin-left: 0.3em;
+    width: 6.5em;
+    height: 2.4em;
+    border: none;
+    border-radius: 0.4em; 
+}
+
+.gift img{
+    line-height: 0em;
+    width: 25px;
+    margin-right: 10px;
+}
+#p9 button a:hover,#p9 button a :focus{
+    background-color: blue;
+}
+#p9 button{
+    background-color: blue;
+    color: white;
+    margin-left: 0.5cm;
+    height: 1.1cm;
+    width: 1.1cm;
+    border: 4px solid white;
+    border-radius: 10cm;
+}
+
+.square{
+    background-color: rgba(68, 14, 14, 0.096);
+    color: black;
+    font-weight: 500;
+    width: 2.4cm;
+    height: 2.6cm;
+    position: absolute;
+    margin-left: 0.5cm;
+    margin-top: 4.9cm;
+    border-radius: 0.3cm;
+}
+
+
+#f1 .putin   img{ 
+    border: none;
+    border-radius: 1em;
+}
