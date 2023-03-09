@@ -1,0 +1,55 @@
+html{
+   background-color:#2C2C2C;
+    color:white; 
+    text-align:center;
+  letter-spacing:10px;
+}
+body{
+    font-family:san-serif;
+    box-sizing:border-box;
+    
+}
+p{
+    font-weight: 900;
+    font-size:x-larger;
+    letter-spacing:20px;  
+   
+}
+.line{
+    
+   border-top:10px solid  #29AB87;
+   
+   border-bottom:4px solid #29AB87;
+    
+    display:block;
+    
+    width:10.6rem;
+    
+    letter-spacing:20px;  
+    
+    letter-lines:30em;
+    
+    height:0px;
+    
+   background:#29AB87;
+    
+}
+
+.line-1{
+    border-top:0;
+    
+    border-bottom:0;
+    
+    display:block;
+    
+     width:10.6rem;
+    
+    letter-spacing:20px;  
+    
+    letter-lines:30em;
+    
+    height:0px;
+    
+   background:#29AB87;
+    
+}
