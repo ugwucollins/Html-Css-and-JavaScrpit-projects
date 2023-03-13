@@ -32,7 +32,7 @@
       <a href="facebook.html"><img src="img/box.png" title="box" width="30" height="30"></a>
       <a href="facebook.html"><img src="img/comment.png" title="message"  width="30" height="30"></a>
       <a href="facebook.html"><img src="img/notification.png" title="notification"  width="30" height="30"></a>
-      <a href="home.html"><img src="img/collins.jpg" title="home"  width="30" height="30"></a>
+      <!-- <a href="home.html"> --><a href="facebook.html"><img src="img/collins.jpg" title="home"  width="30" height="30"></a>
      </p>
     </header>
     
@@ -84,9 +84,7 @@
             See more
             </p>
         </Span>
-         
-         <span class="line"> </span>
-
+         <div class="vl1"></div>
           Your shortcuts
            <span class="SOOL">
             <img src="img/spider1.jpeg" id="s1" width="38" height="38"> Spider x
@@ -103,26 +101,27 @@
         </div>
 
         <div class="menu">
-          <div class="square">
-         <p id="p9"> 
-            <button>+</button>
-           </p> 
-           <p>
-            Create story
-           </p>
-          </div>
           <fieldset id="f1">
             <span class="putin">
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/stories.png" width="30"> Stories&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="img/watch.png" width="25">Reels</p>
-             ________________________________________________________________________
-             <span class="guy">
-             <img src="img/collins.jpg" width="100"height="170">
-           
-                <img src="img/project3.png" width="110">
-                <img src="img/project.png" width="100"height="">
+            <div class="vl1"></div>
+             <section class="section">
+              <div class="square">
+             <img src="img/collins.jpg" width="100"height="110">
+             <p id="p9"> 
+              <button>+</button>
+              </p> 
+              <p>
+              Create story
+             </p>
+          </div>
+                <img src="img/project3.png" width="110"height="170">
+                <img src="img/project.png" width="100"height="170">
                 <img src="img/project1.png" width="110"height="170">
-            </span>
-
+                <!-- <p id="next"></p> -->
+                <button onclick="next()" class="next">></button>
+              </section>
+           
 
           </fieldset>
 
@@ -131,7 +130,7 @@
              <img src="img/collins.jpg" width="40" height="40">
              <input type="text" placeholder="What's on your mind, Tony Collins">
             </span>
-   ______________________________________________________________________
+            <div class="vl1"></div>
           <p class="cook">
             &#127909;Livevideo
             &#128444;&#65039;Photos/videos
@@ -149,7 +148,7 @@
            <Div>Audi RS6 C8 Pure V8 Sound on the Nurburgring</Div>
           </fieldset>
 
-          <img src="img/car1.png" width="510"height="300">
+          <img src="img/car1.png" width="482"height="300">
           
           <fieldset id="f4">
           YOUTUBE.COM
@@ -158,15 +157,19 @@
         </fieldset>
 
         <fieldset id="f5">
-          <!-- &#9829; --><img src="img/images-11.png" width="15" height="15">&#x2764; 87
-         ________________________________________________________________________
+          <span class="span1">
+          <img src="img/images-11.png" width="15" height="15"><p id="count-el">1</p>&#x2764;
+        </span>
+          <div class="vl1"></div>
+          <button id="increament" onclick="increament()">
          <img src="img/images-11.png" width="20" height="20">Like
+        </button>
          <img src="img/comment.png" width="20" height="20">Comment
          <img src="img/share.png" width="20" height="20">share
          <img src="img/collins.jpg" width="20" height="20">
         </fieldset>
         </div>
-
+         <script src="index.js"></script>
         <div class="contact">
          <p>Sponsored</p>
          <SPan class="POOL">
@@ -185,8 +188,7 @@
           </P>
           </span>
 
-
-          <p>_______________________________________________</p>
+          <div class="vl1"></div>
           Friend requests&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="facebook.html">See all</a>
          <nav class="POOL">
 
@@ -196,7 +198,7 @@
           </p>
          </nav>
 <!--          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --><button id="b1">Confirm</button> <button id="b2">Delete</button>
-        <p>___________________________________________________</p>
+           <div class="vl1"></div>
         Birthdays
         <span class="gift">
           <img src="img/Gift_1.png" width="21">
@@ -204,7 +206,7 @@
             Tre Ndy and 4 others have birthdays today.
           </p>
         </span>
-        <p>___________________________________________________</p>
+        <div class="vl1"></div>
         Contacts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#127909;&nbsp;&nbsp;&nbsp;&#x1F50D;
       </div>
      </main>

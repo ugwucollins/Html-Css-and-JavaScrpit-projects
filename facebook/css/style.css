@@ -173,15 +173,16 @@ nav img{
     width: 25em;
 }
  #p2{
-    margin-right: 8.9em;
+    margin-right: 8em;
     display: grid;
     grid-auto-flow:column;
-   gap:4em;
+   gap: 4.3em;
  }
  #p3{
+    margin-right: 2.5cm;
     display: grid;
     grid-auto-flow:column;
-   gap: 0.8em;
+   gap: 0.9em;
  }
 nav img{
     border: none;
@@ -255,9 +256,6 @@ nav img{
     width: 25px;
     margin-right: 10px;
 }
-#p9 button a:hover,#p9 button a :focus{
-    background-color: blue;
-}
 #p9 button{
     background-color: blue;
     color: white;
@@ -269,19 +267,62 @@ nav img{
 }
 
 .square{
-    background-color: rgba(68, 14, 14, 0.096);
-    color: black;
-    font-weight: 500;
-    width: 2.4cm;
-    height: 2.6cm;
-    position: absolute;
-    margin-left: 0.5cm;
-    margin-top: 4.9cm;
+    background-color: rgba(211, 211, 211, 0.315);
+    position:sticky; 
     border-radius: 0.3cm;
 }
 
+.vl1{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 #f1 .putin   img{ 
     border: none;
     border-radius: 1em;
+}
+
+.section{
+    display: flex;
+    gap: 18.5px;
+}
+ .menu .section .next{
+    background-color: rgba(211, 211, 211, 0.774);
+    height: 1.2cm;
+    margin-left: 12.3cm;
+    margin-top: 1.6cm;
+     position: absolute;
+    width: 0.9cm;
+    border: none;
+    border-radius: 10cm;
+} 
+
+.menu .section #next{
+    font-size: 1rem;
+    font-weight: 700;
+    height: 1cm;
+    margin-left: 13cm;
+    margin-top: 2.2cm;
+     position: absolute;
+}
+
+.menu .section .next:hover{
+   background-color:rgba(17, 0, 255, 0.699);
+   transition:background-color 0.9s;
+}
+
+.menu #f5 button{
+    border: none;
+}
+.menu #f5 button:hover{
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+}
+.menu #f5 p{
+    font-weight: 700;
+}
+.span1{
+    display: flex;
 }
