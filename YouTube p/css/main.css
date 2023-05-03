@@ -1,0 +1,482 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0px 0px 0px 235px;
+}
+
+/*main 1*/
+.main1{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    gap: 13px;
+    margin: 80px 0px 25px 10px;
+}
+#p1{
+    overflow: hidden;
+    height: 23px;
+    font-size: larger;
+    padding: 5px;
+    min-width: 26px;
+    max-width: 240px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+}
+#p1:hover{
+    overflow: hidden;
+    height: 21px;
+    padding: 5px;
+    min-width: 20px;
+    max-width: 200px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.main1 #p1 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+}
+.main1 #p1 a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+/*main2*/
+.main2{
+    display: grid;
+    grid-template-columns: 350px 350px 350px ;
+    column-gap: 25px;
+    row-gap: 50px;
+    cursor: zoom-in;
+    margin: 160px 0px 0px 0px;
+}
+.cover .photos img{
+    position: relative;
+    width: 350px;
+    height: 170px;
+    border: none;
+    border-radius: 10px;
+}
+.cover .photos .time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    margin: -31px 0px 0px 280px;
+    height: 20px;
+    padding: 2px;
+    min-width: 34px;
+    max-width: 150px;  
+    border: none;
+    border-radius: 8px;
+}
+.profile{
+    display: flex;
+    gap: 20px;
+    margin-top: 0px;
+}
+.profile-word{
+    white-space: pre-line;
+    margin-top: -17px;
+    margin-bottom: 5px;
+}
+.profile-view{
+     color:rgba(0, 0, 0, 0.504);
+}
+.profile .profile-img img{
+    height: 37px;
+    width:37px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+
+/*FOR BIGGER SCREEN*/ 
+@media (min-width:1550px) { 
+    /* HEADER CSS */
+    .First{
+        margin: 20px 0px 0px 40px;
+        gap: 30px;
+        display: flex;
+    }
+    .middle{
+        display: flex;
+        gap: 30px;
+        margin: 15px 0px 0px 450px;
+    }
+    .middle input{
+        height: 25px;
+        padding: 10px;
+        margin: 0px 0px 0px 80px;
+        width: 1000px;
+        border: 1px solid lightgray;
+        box-shadow: 1px 1px 1px grey;
+        border-radius: 19px;
+    }
+    .last{
+        display: flex;
+        margin: 19px 20px 0px 450px;
+        gap: 50px;
+    }
+
+    /*SIDBAR CSS */
+    .sidebar{
+        position: fixed;
+        padding: 8px 0px 8px 0px;
+        width: 370px;
+        margin: 70px 0px 0px 30px;
+        height: 610px;
+        cursor: zoom-in;
+        background-color: white;
+        z-index: 1;
+    }
+    .bar{
+        display: flex;
+        gap: 30px;
+        white-space: wrap;
+        white-space: pre-wrap;
+        margin: 0px 0px 30px 50px;
+        margin-left: 30px;
+    }
+
+
+    /* MAIN CSS */
+    .main1{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        gap: 30px;
+        margin: 80px 0px 20px 450px; 
+    }
+    #p1{
+        overflow: hidden;
+        height: 25px;
+        padding: 8px;
+        min-width: 40px;
+        max-width: 280px;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+    }
+    #p1:hover{
+        overflow: hidden;
+        height: 26px;
+        padding: 9px;
+        min-width: 50px;
+        max-width: 290px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .main1 #p1 a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.671);
+    }
+    .main1 #p1 a:hover{
+        text-decoration: none;
+        color:white;
+    }
+    .main2{
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: 500px 500px 500px 500px;
+        column-gap: 60px;
+        row-gap: 70px;
+    }
+    .cover .photos img{
+        position: relative;
+        width: 500px;
+        height: 300px;
+        border: none;
+        border-radius: 10px;
+    }
+    .cover .photos .time{
+        position: absolute;
+        background-color: black;
+        color: white;
+        margin: -38px 0px 0px 420px;
+        height: 20px;
+        padding: 2px;
+        min-width: 34px;
+        max-width: 150px;  
+        border: none;
+        border-radius: 8px;
+    }
+   
+
+}
+
+/*FOR SMALL SCREEN */
+@media (max-width:1050px) { 
+       /* HEADER CSS */
+       .First{
+        margin: 20px 0px 0px 10px;
+        gap: 15px;
+        display: flex;
+    }
+    .middle{
+        display: flex;
+        gap: 15px;
+        margin: 15px 0px 0px 70px;
+    }
+    .middle input{
+        height: 20px;
+        padding: 10px;
+        margin: 0px 0px 0px 50px;
+        width: 470px;
+        border: 1px solid lightgray;
+        box-shadow: 1px 1px 1px grey;
+        border-radius: 19px;
+    }
+    .last{
+        display: flex;
+        margin: 20px 20px 0px 90px;
+        gap: 15px;
+    }
+        /*SIDBAR CSS */
+        .sidebar{
+            position: fixed;
+            padding: 6px 0px 6px 0px;
+            width: 220px;
+            margin: 78px 0px 0px 20px;
+            height: 600px;
+            cursor: zoom-in;
+            background-color: white;
+            z-index: 1;
+        }
+        .bar{
+            display: flex;
+            gap: 15px;
+            white-space: wrap;
+            white-space: pre-wrap;
+            margin: 0px 0px 30px 50px;
+            margin-left: 30px;
+        }
+    
+
+    /* MAIN CSS */
+    .main1{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        gap: 10px;
+        margin: 80px 0px 20px 12px;
+    }
+    #p1{
+        overflow: hidden;
+        height: 20px;
+        padding: 4.5px;
+        min-width: 30px;
+        max-width: 220px;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+    }
+    #p1:hover{
+        overflow: hidden;
+        height: 20px;
+        padding: 4.5px;
+        min-width: 20px;
+        max-width: 220px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .main1 #p1 a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.671);
+    }
+    .main1 #p1 a:hover{
+        text-decoration: none;
+        color:white;
+    }
+    .main2{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    
+
+}
+
+/*FOR SMALLER SCREEN */
+@media (max-width:600px) { 
+          /* HEADER CSS */
+          .header{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            height: 110px;
+            cursor: zoom-in;
+            z-index: 1;
+            
+        }
+          .First{
+            margin: 15px 0px 0px 5px;
+            gap: 15px;
+            display: flex;
+        }
+        .middle{
+            display: flex;
+            gap: 10px;
+            margin: 15px 0px 0px 0px;
+        }
+        .middle input{
+            height: 20px;
+            padding: 10px;
+            margin: 0px 0px 0px 10px;
+            width: 300px;
+            border: 1px solid lightgray;
+            box-shadow: 1px 1px 1px grey;
+            border-radius: 19px;
+        }
+        .last{
+            display: flex;
+            margin: 25px 20px 0px 20px;
+            gap: 15px;
+        }
+
+            /*SIDBAR CSS */
+            .sidebar{
+                position: fixed;
+                max-width: 50px;
+                /* margin: 78px 0px 0px 35px; */
+                margin-top: 78px;
+                margin-left: 40px;
+                height: 580px;
+                cursor: zoom-in;
+                background-color: white;
+                z-index: 1;
+            }
+            .bar{
+                max-width: 35px;
+                display: flex;
+                gap: 15px;
+                white-space: pre-wrap;
+                margin-left: 40px;
+            }
+            .bar-words{
+                opacity: 0;
+            }
+
+            .bar-words:hover{
+                opacity: 1;
+            }
+            .sidebar:hover{
+                position: fixed;
+                max-width: 250px;
+                margin: 78px 0px 0px 5px;
+                height: 580px;
+                cursor: zoom-in;
+                background-color: white;
+                z-index: 1;
+            }
+        
+            .bar:hover{
+                display: flex;
+                max-width: 250px;
+                gap: 10px;
+                background-color: lightgrey;
+                white-space: pre-wrap;
+                margin-left: 5px;
+            }
+        
+    
+        /* MAIN CSS */
+        .container{
+            position: relative;
+            display: grid;
+            grid-template-columns: auto;
+            margin: 0px 0px 0px 115px;
+        }
+        
+        .main1{
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            background-color: white;
+            z-index: 1;
+            gap: 5px;
+            margin: 80px 0px 0px 0px;
+        }
+        #p1{
+            overflow: hidden;
+            height: 18px;
+            padding: 4px;
+            min-width: 40px;
+            max-width: 200px;
+            background-color: lightgray;
+            border: none;
+            border-radius: 5px;
+        }
+        #p1:hover{
+            overflow: hidden;
+            height: 18px;
+            padding: 4px;
+            min-width: 40px;
+            max-width: 200px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .cover .photos .time{
+            position: absolute;
+            background-color: black;
+            color: white;
+            margin: -38px 0px 0px 350px;
+            height: 20px;
+            padding: 2px;
+            min-width: 34px;
+            max-width: 150px;  
+            border: none;
+            border-radius: 8px;
+        }
+        .main1 #p1 a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.671);
+        }
+        .main1 #p1 a:hover{
+            text-decoration: none;
+            color:white;
+        }
+        .main2{
+            display: grid;
+            grid-template-columns: 500px;
+            column-gap: 20px;
+            row-gap: 20px;
+            margin: 135px 0px 0px 0px;
+        }
+        .cover .photos img{
+            position: relative;
+            width: 430px;
+            height: 200px;
+            border: none;
+            border-radius: 10px;
+        }
+    
+}

@@ -1,0 +1,135 @@
+/*HEADER*/
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 140px;
+    cursor: zoom-in;
+    z-index: 1;
+    
+}
+
+
+
+/*FISRT*/
+.First{
+    margin: 15px 0px 0px 15px;
+    gap: 20px;
+    display: flex;
+}
+.youf{
+    display: flex;
+}
+
+
+
+/*MIDDLE*/
+.middle{
+    display: flex;
+    gap: 20px;
+    margin: 10px 0px 0px 200px;
+}
+.middle input{
+    height: 20px;
+    padding: 10px;
+    margin: 0px 0px 0px 50px;
+    width: 550px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 19px;
+}
+#pm{
+    position: relative;
+}
+.pm1{
+    position: absolute;
+    margin: 1px 0px 0px -75px;
+    background-color: rgba(211, 211, 211, 0.315);
+    width: 72.6px;
+    text-align: center;
+    height: 40px;
+    border-radius: 0px 15px 15px 0px;
+}
+.pm1 i {
+    margin: 12px 0px 0px 0px;
+}
+#pm2{
+    margin-top: 10px;
+}
+
+
+
+/*LAST*/
+.last{
+    display: flex;
+    margin: 15px 20px 0px 180px;
+    gap: 30px;
+    cursor: pointer;
+}
+.last img{
+    width: 30px;
+    margin-top: -7.5px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+#pl{
+   position: relative;
+   font-size: 18px;
+}
+#pl1{
+  position: absolute;
+  background-color: rgba(182, 6, 6, 0.966);
+  color: white;
+  font-size: 11px;
+  margin: -26px 0px 0px 7px;
+  padding: 0px 3px 0px 3px;
+  border: none;
+  border-radius: 50%;
+}
+
+
+
+/* body{
+    display: flex;
+    flex-direction: row;
+}
+div{
+    background-color: blue;
+    color: white;
+    width: 300px;
+
+} */
+/* body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+div{
+    background: scroll;
+    background-color: blue;
+    color: aliceblue;
+    height: 100px;
+    text-align: center;
+    justify-items: center;
+
+}
+@media (max-width:800px) { 
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    div{
+        background: scroll;
+        background-color: blue;
+        color: aliceblue;
+        height: 100px;
+        text-align: center;
+        justify-items: center;
+    
+    }  
+} */
