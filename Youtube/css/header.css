@@ -1,0 +1,156 @@
+/*HEADER*/
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: min-content;
+    height: 70px;
+    cursor: zoom-in;
+    z-index: 1;
+    box-shadow: 0px 2px 2px lightgrey, 0px -2px 2px lightgrey;
+    margin-top: 3px;
+}
+
+/*FISRT*/
+.First{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 18px 0px 42px 61px;
+}
+.youf{
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+}
+.all i{
+    color: gray;
+}
+
+/* <i class="fab fa-video-plus"></i> */
+/*MIDDLE*/
+.middle{
+    display: flex;
+    gap: 20px;
+    margin: 15px 0px 0px 80px;
+}
+.middle input{
+    height: 20px;
+    padding: 10px;
+    margin: 0px 0px 0px 50px;
+    width: 550px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 3px grey, -1px -1px 3px grey;
+}
+#pm{
+    position: relative;
+}
+.pm1{
+    position: absolute;
+    margin: 1px 0px 0px -75px;
+    background-color: rgba(211, 211, 211, 0.315);
+    width: 72.6px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    height: 40px;
+}
+.pm1 i {
+    margin: 12px 0px 0px 0px;
+}
+#pm2{
+    background-color: rgb(248, 246, 246);
+    width: 23px;
+    padding: 5px 3px 0px 10px;
+    margin: 1px 0px 13px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+}
+#pm2 i{
+    color: black;
+}
+
+
+
+/*LAST*/
+.last{
+    display: flex;
+    margin: 18px 20px 0px 120px;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.last i{
+    color: rgba(49, 48, 48, 0.815);
+}
+.last img{
+    width: 30px;
+    margin-top: 0px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+#pl{
+   position: relative;
+   font-size: 18px;
+}
+#pl1{
+  position: absolute;
+  background-color: rgba(182, 6, 6, 0.966);
+  color: white;
+  font-size: 11px;
+  margin: -26px 0px 0px 7px;
+  padding: 0px 3px 0px 3px;
+  border: none;
+  border-radius: 50%;
+}
+
+
+
+/* body{
+    display: flex;
+    flex-direction: row;
+}
+div{
+    background-color: blue;
+    color: white;
+    width: 300px;
+
+} */
+/* body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+div{
+    background: scroll;
+    background-color: blue;
+    color: aliceblue;
+    height: 100px;
+    text-align: center;
+    justify-items: center;
+
+}
+@media (max-width:800px) { 
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    div{
+        background: scroll;
+        background-color: blue;
+        color: aliceblue;
+        height: 100px;
+        text-align: center;
+        justify-items: center;
+    
+    }  
+} */

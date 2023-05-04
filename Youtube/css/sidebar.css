@@ -1,0 +1,42 @@
+.sidebar{
+    position: fixed;
+    width: 130px;
+    margin: 60px 0px 0px 0px;
+    height: 600px;
+    cursor: zoom-in;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 1px -0px 3px whitesmoke;
+    filter: blur(0.1px);
+}
+.sidebar .bar:hover{
+    background-color: rgba(211, 211, 211, 0.274);
+    color: black;
+    padding: 8px 0px 8px 0px;
+    border: none;
+    border-radius: 6px;
+}
+.sidebar .bar i{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+}
+.sidebar .bar i:hover{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+.bar{
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px 0px 42px 0px;
+}
+.bar-words{
+    font-size: 15px;
+    font-weight: 700;
+    color: grey; 
+}
