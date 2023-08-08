@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Section</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+    <header>
+
+        <div class="cart-header">
+            <img src="img/amazon2.png" alt="" class="amazon-logo">
+            <span class="Checkout">
+                <p>Checkout</p> 
+
+                <div class="icon-cart add2"  id="Items">( 
+                    <span id="item">0</span>
+                    <p class="items2" id="item">items</p>
+                    )
+                </div>
+
+            </span>
+            <span class="cart-i">
+               <!--  <i class='bx bx-x'></i> -->
+                <a  class='bx bxs-lock-alt' id="close-cart" href="index.html"></a>
+            </span>
+        </div>
+        
+    </header>
+    <h3>Review your order</h3>
+
+     <div class="cart" id="cart">
+            <div class="checkout-section">
+
+                    <div class="delivery-product-section">
+                        <div class="delivery-product">
+
+                            <p class="date-and-time">Delivery date: Tuesday, December 13</p>
+
+                        <div class="delivery-product-main"> 
+
+                                <div class="delivery-item">
+                                    <span class="img-span">
+                                        <img src="img/product17.jpg" alt="">
+                                    </span>
+
+                                    <div class="text-div">
+                                        <p class="bold-black bold">
+                                            Black and Gray Athletic Cotton Socks - 6 pairs
+                                        </p>
+                                        <p class="bold-red">$10.90</p>
+                                        <span class="span-text">
+                                            <p class="Quantity">Quantity: </p>
+                                            <p> 2 </p>
+                                            <a href="">Update</a>
+                                            <a href="">Delete</a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="delivery-date">
+                                    <p class="bold-black">Choose a delivery Opton:</p>
+                                    <div class="input-div">
+                                        <input type="radio" name="date" id="">
+                                        <span class="input-date">
+                                            <p class="input-date-number">Tuesday, December 13</p>
+                                            <p class="input-date-price">FREE shipping</p>
+                                        </span>
+                                    </div>
+
+                                    <div class="input-div">
+                                        <input type="radio" name="date" id="">
+                                        <span class="input-date">
+                                            <p class="input-date-number">Wednesday, December 7</p>
+                                            <p class="input-date-price">$4.99 - shipping</p>
+                                        </span>
+                                    </div>
+
+                                    <div class="input-div">
+                                        <input type="radio" name="date" id="">
+                                        <span class="input-date">
+                                            <p class="input-date-number">Monday, December 5</p>
+                                            <p class="input-date-price">$9.99 - shipping</p>
+                                        </span>
+                                    </div>
+                                </div>
+
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="total-amount-section">
+                    <h3 id="h3">Order Summary</h3>
+                    <div class="items">
+                        <section class="item-numbers">
+                            <p  class="item-word">Items</p> 
+
+                            <div  class="icon-cart add3">
+                                ( 
+                                <span id="item3">0</span>
+                                )
+                            </div>
+
+                        </section>
+                        <p class="price1">$42.75</p>
+                    </div>
+                    <span class="items">
+                        <p  class="item-word">Shipping & handling:</p>
+                        <p class="price1">$4.99</p>
+                    </span>
+
+                    <div class="vl1"></div>
+
+                    <span class="items">
+                        <p  class="item-word">Total before tax:</p>
+                        <p class="price1">$47.74</p>
+                    </span>
+                    
+                    <div class="items">
+                        <span class="item-numbers">
+                            <p  class="item-word">Estimated tax</p>
+                            <p>(10%):</p>
+                        </span>
+                        <p class="price1">$4.77</p>
+                    </div>
+
+                    <div class="vl"></div>
+
+                    <span class="Order-total bold-red items">
+                        <p class="item-word">Order total:</p>
+                        <p class="price1 bold-red">$52.51</p>
+                    </span>
+
+                    <span class="Paypal">
+                        <p class="item-word">Use Paypal</p>
+                        <input type="checkbox" class="Paypal-input">
+                    </span>
+
+                    <span class="place-button">
+                        <button class="button-for-orders">Place your Order</button>
+                    </span>
+                </div>
+
+            </div>
+            
+    </div>
+        <div class="cart" id="cart">
+         <!--  <span class='bx bx-cart' id="cart-icon"  onclick=" cartSection()"></span> -->
+
+     </div>
+     
+ </section>
+    <script src="main.js"></script>
+</body>
+</html>
