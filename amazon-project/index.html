@@ -7,21 +7,27 @@
     <title>Amazon ecomerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"  />
     <link rel="stylesheet" href="css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
     <body>
+
+
         <header class="header">
             <div class="header-section"> 
-                <img src="images/amazon black.png" alt="" class="amazon-logo">           
-                <div class="search-header">
-                    <input type="text" class="input" placeholder="Search">
-                    <span class="search-icon"> <i class="fas fa-magnifying-glass"></i> 
-                    <!-- <box-icon name="bell" animation="tada"></box-icon> --></span>
-                </div>
+                <img src="images/amazon black.png" alt="" class="amazon-logo"> 
+                <form>          
+                    <div class="search-header">
+                        <input type="text" class="input" id="search-item" placeholder="Search" 
+                        onkeyup="search()">
+                        <span class="search-icon"> <i class="fas fa-magnifying-glass"></i> 
+                        <!-- <box-icon name="bell" animation="tada"></box-icon> --></span>
+                    </div>
+                </form>
                 <div class="header-order">
                     <p class="Returns">Returns &<span class="Orders">Orders</span></p>
 
@@ -38,13 +44,20 @@
         </header>
     
         
-            <main class="product-container">
+            <main class="product-container" id="product-list">
                 <section class="product-section cart-Content">
                     <div class="product-section-div cart-Boxes">
                         <img src="images/product17.jpg" alt="" class="product-img">
-                        <p class="product-section-text">Black and Gray Athletic Cotton Socer</p>
-                        <p class="star-number"><i class='bx bx-star' id="star"></i>87</p>
-                        <p class="price cart-Price">$10.90</p>
+                        <h2 class="product-section-text">Black and Gray Athletic Cotton Socer</h2>
+                        <div class="star-section">
+                            <div class="BlackAthletic">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price cart-Price">$10.92</p>
                         <input type="number" class="product-input" value="1">
                         <div class="button-section">
                             <a class="button" href="#">Add to Cart</a>
@@ -56,8 +69,15 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product18.jpg" alt="" class="product-img">
-                        <p class="product-section-text">Intermediate Size Basketball</p>
-                        <p class="star-number">127</p>
+                        <h2 class="product-section-text">Intermediate Size Basketball</h2>
+                        <div class="star-section">
+                            <div class="Basketball">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$20.95</p>
                         <input type="number" class="product-input" value="1">
                         <div class="button-section">
@@ -69,8 +89,15 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product21.jpg" alt="" class="product-img">
-                        <p class="product-section-text">Adult Plain Cotton T-Shirt-2 Pack</p>
-                        <p class="star-number">56</p>
+                        <h2 class="product-section-text">Adult Plain Cotton T-Shirt-2 Pack(clothes)</h2>
+                        <div class="star-section">
+                            <div class=" Cotton">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$7.99</p>
                         <input type="number" class="product-input" value="1">
                     </div>
@@ -82,9 +109,17 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product22.jpg" alt="" class="product-img">
-                        <p class="product-section-text">2 Slot Toaster - Black</p>
-                        <p class="star-number">2197</p>
+                        <h2 class="product-section-text">2 Slot Toaster - Black</h2>
+                        <div class="star-section">
+                            <div class="Toaster">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$18.99</p>
+
                         <input type="number" class="product-input" value="1">
                     </div>
                   <div class="button-section">
@@ -95,8 +130,15 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product20.jpg" alt="" class="product-img">
-                        <p class="product-section-text">6 Piece White Dinner Plate Set</p>
-                        <p class="star-number">37</p>
+                        <h2 class="product-section-text">6 Piece White Dinner Plate Set</h2>
+                        <div class="star-section">
+                            <div class="Plate">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$20.67</p>
                         <input type="number" class="product-input" value="1">
                     </div>
@@ -108,8 +150,15 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product 1.jpg" alt="" class="product-img">
-                        <p class="product-section-text">6 different colors of clothes</p>
-                        <p class="star-number">57</p>
+                        <h2 class="product-section-text">6 different colors of clothes</h2>
+                        <div class="star-section">
+                            <div class="clothes">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$10.67</p>
                         <input type="number" class="product-input" value="1">
                     </div>
@@ -121,8 +170,15 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product2.jpg" alt="" class="product-img">
-                        <p class="product-section-text">sliver ear ring</p>
-                        <p class="star-number">20</p>
+                        <h2 class="product-section-text">sliver ear ring</h2>
+                        <div class="star-section">
+                            <div class="earring">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$30.67</p>
                         <input type="number" class="product-input" value="1">
                     </div>
@@ -134,9 +190,16 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product3.jpg" alt="" class="product-img">
-                        <p class="product-section-text">Black sun glasses</p>
-                        <p class="star-number">94</p>
-                        <p class="price">$15.30</p>
+                        <h2 class="product-section-text">Black sun glasses</h2>
+                        <div class="star-section">
+                            <div class="glasses">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price">$15.32</p>
                         <input type="number" class="product-input" value="1">
                     </div>
                   <div class="button-section">
@@ -147,8 +210,15 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product4.jpg" alt="" class="product-img">
-                        <p class="product-section-text">Fine black bluetooth(for ear phone)</p>
-                        <p class="star-number">90</p>
+                        <h2 class="product-section-text">Fine black bluetooth(for ear phone)</h2>
+                        <div class="star-section">
+                            <div class="bluetooth">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$30.88</p>
                         <input type="number" class="product-input" value="1">
                     </div>
@@ -160,9 +230,116 @@
                 <section class="product-section">
                     <div class="product-section-div">
                         <img src="images/product5.jpg" alt="" class="product-img">
-                        <p class="product-section-text">Vanaila Cup Cake</p>
-                        <p class="star-number">37</p>
+                        <h2 class="product-section-text">Vanaila Cup Cake</h2>
+                        <div class="star-section">
+                            <div class="Vanaila">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
                         <p class="price">$20.67</p>
+                        <input type="number" class="product-input" value="1">
+                    </div>
+                    <div class="button-section">
+                        <a class="button" href="#">Add to Cart</a>
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="product-section-div">
+                        <img src="images/product19.jpg" alt="" class="product-img">
+                        <h2 class="product-section-text">Intermediate Size FootBall</h2>
+                        <div class="star-section">
+                            <div class="FootBall">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price">$80.77</p>
+                        <input type="number" class="product-input" value="1">
+                    </div>
+                    <div class="button-section">
+                        <a class="button" href="#">Add to Cart</a>
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="product-section-div">
+                        <img src="images/product13.jpg" alt="" class="product-img">
+                        <h2 class="product-section-text">Adult Plain Cotton T-Shirt-white and black Pack(clothes)</h2>
+                        <div class="star-section">
+                            <div class="Adult">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price">$15.54</p>
+                        <input type="number" class="product-input" value="1">
+                    </div>
+                    <div class="button-section">
+                        <a class="button" href="#">Add to Cart</a>
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="product-section-div">
+                        <img src="images/product16.jpg" alt="" class="product-img">
+                        <h2 class="product-section-text">Normal size Glass Wine Cup</h2>
+                        <div class="star-section">
+                            <div class="Wine">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price">$15.71</p>
+                        <input type="number" class="product-input" value="1">
+                    </div>
+                    <div class="button-section">
+                        <a class="button" href="#">Add to Cart</a>
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="product-section-div">
+                        <img src="images/product10.jpg" alt="" class="product-img">
+                        <h2 class="product-section-text">Herberal-Drug Bottel</h2>
+                        <div class="star-section">
+                            <div class="HerberalDrug">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price">$15.62</p>
+                        <input type="number" class="product-input" value="1">
+                    </div>
+                    <div class="button-section">
+                        <a class="button" href="#">Add to Cart</a>
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="product-section-div">
+                        <img src="images/product15.jpg" alt="" class="product-img">
+                        <h2 class="product-section-text">Hot-Red-Wine Bottel</h2>
+                        <div class="star-section">
+                            <div class="Bottel">
+                                <div class="stars-outer">
+                                    <div class="stars-inner" id="star2"></div>
+                                </div>
+                                <span class="number-rating" id="star-number"></span>
+                            </div>
+                        </div>
+                        <p class="price">$20.69</p>
                         <input type="number" class="product-input" value="1">
                     </div>
                     <div class="button-section">
@@ -171,6 +348,6 @@
                 </section>
             </main>
 
-            <script src="main.js"></script>
+            <script src="js/main.js" defer></script>
    </body>
-</html>
+</html>//

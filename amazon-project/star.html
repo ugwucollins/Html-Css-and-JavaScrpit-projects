@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star ratings</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css' rel='stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        .stars-outer{
+            position: relative;
+            display: inline-block;
+        }
+        .stars-inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+        }
+        .stars-outer::before {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-family: 'FontAwesome';
+            font-weight: 600;
+            color:gray;
+            font-size: 20px;
+        }
+        .stars-inner::before {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-family: 'FontAwesome';
+            font-weight: 600;
+            color: gold;
+            font-size: 20px;
+            
+        }
+
+        .stars-outer::before:not(:checked) ~  .stars-inner::before:hover{
+            color: gold;
+        }
+     .span label{
+        font-size: 28px;
+        transition: all 0.5s;
+        float: right;
+      }
+    input:not(:checked) ~ label:hover,
+    input:not(:checked) ~ label:hover ~ label{
+        color: gold;
+      }
+      input:checked ~ label{
+        color: gold;  
+      }
+    </style>
+</head>
+<body>
+    
+<!--<a href="" id="BACK-to-top">BACK TO TOP</a> -->
+        <table>
+
+            <thead>
+                <th>name</th>
+                <th>star rating</th>
+            </thead>
+        <tbody> 
+            <tr class="sony">
+                <td>sony 4k tv</td>
+                <td>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                    </div>
+                    <span class="number-rating"></span>
+                </td>
+             </tr>
+
+             <tr class="place">
+                <td>sony 4k tv</td>
+                <td>
+                    <div class="stars-outer">
+                        <div class="stars-inner"></div>
+                    </div>
+                    <span class="number-rating"></span>
+                </td>
+             </tr>
+
+             <tr class="vizo">
+                <td>sony 4k tv</td>
+                <td>
+                  
+                </td>
+             </tr>
+            </tbody>
+        </table>
+    <div class="span"> 
+        <input type="radio" name="call-star" id="star6">
+        <label for="star6"  class="fa fa-star"></label>
+        <input type="radio" name="call-star" id="star5">
+        <label for="star5" class="fa fa-star"></label>
+        <input type="radio" name="call-star" id="star4">
+        <label for="star4" class="fa fa-star"></label>
+        <input type="radio" name="call-star" id="star3">
+        <label for="sta3r" class="fa fa-star"></label>
+        <input type="radio" name="call-star" id="star2">
+        <label for="star2" class="fa fa-star"></label>
+
+        <input type="radio" name="call-star" id="star1">
+        <label for="star1" class="fa fa-star"></label>
+    </div>
+    <div class="vizo">
+        <div class="stars-outer">
+            <div class="stars-inner" id="star2"></div>
+        </div>
+        <span class="number-rating"></span>
+    </div>
+                <script>
+                const ratings = {
+                    sony :10,
+                    place :20,
+                    vizo :89,
+                }
+                document.addEventListener('DOMContentLoaded',
+                getRatings);
+                const starTotal = 250;
+
+                 function getRatings() {
+                    //console.log('ran');
+                    for (let rating in ratings) {
+                        //console.log(ratings[rating]);
+                        const starPercentage =  (ratings[rating]/ 
+                       starTotal)*130;
+    
+                       const starPercentageRounded = `${Math.round
+                        (starPercentage / 5)*5}%`;
+    
+                        
+                        document.querySelector(`.${rating} 
+                        .stars-inner`).style.width = starPercentageRounded;
+
+                        document.querySelector(`.${rating} 
+                        .number-rating`).innerHTML = ratings[rating];
+    
+                    }
+                    //console.log(starPercentageRounded);
+                 }
+            
+             </script>
+    
+    
+</body>
+</html>
+
+
+<!--    <div class="date">
+        <span id="dayname">Day, </span>
+        <span id="month"> Month</span>
+        <span id="daynum">00,</span>
+        <span id="year"> Year</span>
+    </div>
+
+               /*  const productSelect = document.getElementById('product-select');
+                const ratingControl = document.getElementById('rating-control');
+
+                let product;
+
+                productSelect.addEventListener('change', (e) =>{
+                    product = e.target.value;
+                    ratingControl.disabled = false;
+                    ratingControl.value = ratings[product];
+                });
+                 
+
+                ratingControl.addEventListener('blur', (e) =>{
+                const rating = e.target.value;
+
+                if () {
+                    
+                }
+            });
+ */

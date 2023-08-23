@@ -132,6 +132,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
 .product-section{
     margin: 70px -28px 0px 0px;
@@ -157,11 +158,10 @@ body{
     width: 150px;
 
 }
-.star-number{
+#star-number{
     color: rgba(0, 0, 255, 0.979);
     font-weight: 600;
-    font-size: 13px;
-    margin-left: 20px;
+    font-size: 14px;
 }
 #star{
     color: rgb(255, 145, 0);
@@ -192,7 +192,7 @@ body{
 .button-section a{
     position: absolute;
     text-decoration: none;
-    background-color: rgb(255, 255, 0);
+    background-color:gold;
     top: 2px;
     left: 18px;
     width: 120px;
@@ -414,6 +414,7 @@ body{
     border: 1px solid lightgray;
 }
 .date-and-time{
+    display: flex;
     font-size: 16px;
     font-weight: 700;
     color: rgb(18, 156, 18);
@@ -425,6 +426,7 @@ body{
 .delivery-item{
     display: flex;
     column-gap: 15px;
+    margin-top: 15px;
 }
 /* Under delivery-item*/
 .img-span img {
@@ -548,6 +550,56 @@ body{
     width: 40px;
 
 }
+#BACK-to-top{
+    background-color: orangered;
+    font-size: 15px;
+    width: 100px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+#BACK-to-top:hover{
+    color: orangered;
+    width: 120px;
+    transition: all 0.9s;
+    background-color: lightgray;
+    font-weight: 800;
+}
+
+
+/*star section*/
+.star-section{
+    margin-left: 18px;
+}
+.stars-outer{
+    position: relative;
+    display: inline-block;
+}
+.stars-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+.stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005 \f005";
+    font-family: 'FontAwesome';
+    font-weight: 600;
+    color:gray;
+    font-size: 19px;
+}
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005 \f005";
+    font-family: 'FontAwesome';
+    font-weight: 600;
+    color: gold;
+    font-size: 19px;
+    
+}
 /* .cart-remove{
     cursor: pointer;
     position: absolute;
@@ -558,6 +610,14 @@ body{
     color: blue;
 }
  */
+    /* DATE SECTION*/
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    margin-left: 10px;
+}
 
 
 
