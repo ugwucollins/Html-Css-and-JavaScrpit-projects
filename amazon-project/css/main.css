@@ -307,6 +307,23 @@ body{
     border-top: 0px;
     border-bottom: 0px;
 }
+
+/*input-date-number*/
+.input-date-number{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0, 145, 0);
+    filter: brightness(100px);
+    white-space: nowrap;
+}
+.input-date-price{
+    color: rgb(112, 112, 112);
+    filter: blur(0.4px);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -15px;
+    white-space: nowrap;
+}
 /* .cart-remove{
     cursor: pointer;
     position: absolute;
@@ -346,6 +363,7 @@ body{
 .cart{
     position: relative;
 }
+
 .cart-header{
     position: relative;
     display: flex;
@@ -415,13 +433,23 @@ body{
 }
 .date-and-time{
     display: flex;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     color: rgb(18, 156, 18);
     filter: brightness(2px);
     margin-left: 15.8px;
+    margin-top: 10px;
 }
+.date{
+    display: flex;
+    font-size: 17px;
+    color: rgb(18, 156, 18);
+    gap: 7px;
+    margin-top: -15.5px;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
 /* Under delivery-product-main*/
 .delivery-item{
     display: flex;
@@ -455,8 +483,10 @@ body{
 .Quantity{
     font-size: 15px;
     font-weight: 490;
+    margin-right: 3px;
 }
 .span-text a{
+    cursor: pointer;
     margin: 15px 0px 0px 10px;
     text-decoration: none;
     color: blue;
@@ -469,6 +499,8 @@ body{
     column-gap: 4px;
 }
 .input-date-number{
+    display: flex;
+    gap: 8px;
     font-size: 15px;
     font-weight: 600;
     color: rgb(0, 145, 0);
@@ -610,14 +642,6 @@ body{
     color: blue;
 }
  */
-    /* DATE SECTION*/
-.date{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: green;
-    margin-left: 10px;
-}
 
 
 
@@ -662,6 +686,10 @@ body{
     } */
 }
 @media(max-width:460px){ 
+    /*.delivery-product-main*/
+    .delivery-product-main{
+        display: grid;
+    }
 .search-header .input{
     position: relative;
     padding: 1px;
