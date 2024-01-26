@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Email Project</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        *,
+        *::before,
+        *::after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper{
+            width: 100%;
+            min-height: 100vh;
+            font-size: 0;
+            table-layout: fixed;
+            background-color: #cccccc;
+            padding-bottom: 60px;
+        }
+
+        .main{
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 700px;
+            border-spacing: 0;
+            color: black;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+            border: none;
+            margin: 0px 0px;
+        }
+
+        /* top */
+        .top{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-direction: row;
+            padding: 10px 28px 10px 25px;
+        }
+        .tag{
+            text-decoration: none;
+            color: black;
+        }
+        .icon{
+            width: 100%;
+            max-width: 25px;
+            height: 28px;
+            margin: 0px 0px 0px 0px;
+        }
+        .icon2{
+            width: 100%;
+            max-width: 30px;
+            height: 30px;
+            margin: 0px 0px 0px 0px;
+        }
+        /* image */
+        .image{
+            position: relative;
+            background-image: url('https://i.ibb.co/SJyP1Sm/mountain.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            background-position: 10% 70%;
+            color: #ffffff;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0px 10px 0px 10px;
+        }
+        .img-h1{
+            position: absolute;
+            top: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            width: 100%;
+        }
+        .img-p{
+            position: absolute;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            left: 0px;
+            height: auto;
+            color: lightgray;
+            margin-top: 60px;
+            top: 35px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .img-btn{
+             top: 30px;
+            position: relative;
+            width: 120px;
+            height: 35px;
+            background-color: black;
+            border: none;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .img-btn:hover::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            top: 0px;
+            left: 0px;
+            border: none;
+            border-radius: 4px;
+            animation: trans 1s forwards linear;
+        }
+        @keyframes trans {
+            0%{
+                transform: translateX(-120px);
+            }
+        }
+        .img-btn a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            color:rgba(245, 245, 245, 0.851);
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px 14.6px;
+            white-space: nowrap;
+        }
+        .img-btn a:hover{
+            color:black;
+            animation: colors 1s forwards linear;
+        }
+        @keyframes colors {
+            0%{
+                color: white;
+            }
+        }
+        /* end of image */
+
+    /* column */
+       .column{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px,220px));
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            column-gap: 10px;
+            row-gap: 11px;
+            margin: 0px;
+            padding: 30px 10px 35px 10px; 
+       }
+       .column .header{
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+       }
+      
+       /* three-column */
+       .column2{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,300px));
+        background-color: black;
+        justify-content: center;
+        width: 100%;
+        padding: 25px 10px 25px 10px;
+        column-gap: 20px;
+        row-gap: 45px;
+       }
+
+       .column2 img{
+        width: 100%;
+        max-width: 300px;
+       }
+       .column2-t2{
+        text-align: left;
+       }
+       .btn{
+        width: 100%;
+        margin-top:5px;
+        max-width: 95px;
+        height: 35px;
+        border: none;
+        border-radius: 3px;
+       }
+       .btn a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        filter: blur(0.1px);
+       }
+
+       /* column3 */
+       .column3{
+        display: grid;
+        text-align: center;
+        font-size: 0;
+        width: 100%;
+        padding: 30px 10px 32px 10px;
+       }
+       .column4{
+        display: grid;
+        text-align: center;
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 30px 10px 50px 10px;
+       }
+
+
+        @media screen and (max-width:800px) { 
+            .main{
+            max-width: 600px;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            .main{
+            max-width: 500px;
+        }
+        }
+        @media screen and (max-width:500px) {
+            .main{
+            max-width: 390px;
+        }
+        }
+        @media screen and (max-width:400px) {
+            /* top */
+            .top{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                transition: all 100ms;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main">
+            <tr>
+                <td style="height: 8px;background-color: black;"></td>
+            </tr>
+
+            <tr>
+                <td class="top">
+                    <table>
+                        <tr>
+                            <td>
+                                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/0Gpw7c2/modern.png"
+                                        style="width: 100%;
+                                        max-width: 150px;"
+                                         alt="modern" border="0">
+                                    </a>                         
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>  
+                                <a 
+                                href="https://www.facebook.com/tonycollins.ugwu.18?mibextid=rS40aB7S9Ucbxw6v"
+                                class="tag">
+                                    <img src="https://i.ibb.co/QQ0VxCz/facebook2.png" alt="facebook2"  
+                                    style="max-width: 30px;height: 30px;" class="icon" border="0">
+                                </a>           
+
+                                <a 
+                                href="https://twitter.com/ugwu_somto5?t=b32VnJTFlyDSqqUnMx_eg&s=08"
+                                class="tag">
+                                   <img src="https://i.ibb.co/MDBFZXv/twitter2.png" alt="twitter2" class="icon" border="0">
+                                </a>             
+
+                                <a href="#" class="tag">
+                                    <img src="https://i.ibb.co/k2DLjN3/youtube2.png" alt="youtube2" class="icon" border="0">
+                                </a>    
+
+                                <a href="#" class="tag">
+                                    <img src="https://i.ibb.co/9y4L0zQ/linked2.png" alt="linked2"  class="icon" border="0">
+                                </a> 
+
+                                <a 
+                                href="https://instagram.com/tonycollinsu?igshid=YWYwM2I1ZDdmOQ=="
+                                class="tag">
+                                      <img src="https://i.ibb.co/YWprfpD/instargram.png" alt="instargram" class="icon" border="0">
+                                </a>                           
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <table class="image-table" style="position: relative;">
+                        <h1 class="img-h1">A Modern Design Agency</h1>
+                        <p class="img-p">
+                            We help your bran go viral to connect you
+                            with your customers and grow organically
+                        </p>
+                        <button class="img-btn">
+                            <a href="https://github.com/ugwucollins">GET STARTED</a>
+                        </button>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="column">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/k8250Xq/images-2.png"
+                                    style="width: 100px; margin-bottom: 23px;" 
+                                        alt="images-2" border="0"></a>
+                                <p class="header">Ecommerce</p>   
+                                <p style="font-size: 16px; filter: blur(0.3px);">
+                                  Responsive HTML Email Template Project To massive email development
+                                </p>        
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/BTgT1c7/images.png"
+                                    style="width: 100px; margin-bottom: 23px;" 
+                                    alt="images" border="0"></a>
+                                <p class="header">Web Design</p>   
+                                <p style="font-size: 16px; filter: blur(0.3px);">
+                                  Responsive HTML Email Template Project To massive email development
+                                </p>        
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/bshZVh1/home.png"
+                                    style="width: 100px; margin-bottom: 23px;"
+                                     alt="home" border="0"></a>
+                                <p class="header">HTML Email</p>   
+                                <p style="font-size: 16px; filter: blur(0.3px);">
+                                  Responsive HTML Email Template Project To massive email development
+                                </p>        
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr >
+                <td class="column2">
+
+                    <table class="column2-t1">
+                        <tr>
+                            <td>
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/m0fB6KM/code.jpg" 
+                                    style="border-radius: 3px;"
+                                    alt="code" border="0">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="column2-t2">
+                        <tr>
+                            <td>
+                                <p style=" font-size: 16px;color: #ffffff;
+                                          margin-bottom:15px; font-weight: 800;">
+                                      Create custom Design
+                                </p>
+        
+                                 <p 
+                                 style=" font-size: 14px;font-weight: 500;
+                                 color: lightgray; margin-bottom: 25px;">
+                                    Over the years we have built up a massive 
+                                    portfoilo for our client websites and email Design and also a 
+                                    Responsive HTML Email Templates 
+                                 </p>
+                                 <button class="btn">
+                                    <a href="https://github.com/ugwucollins">Read more</a>
+                                 </button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="column3" width="100%">
+                    <table>
+                        <tr>
+                            <td>
+                                <p style="color: black;font-size: 17px;
+                                font-weight: 700; margin-bottom: 17px;"
+                                >HTML Email Template Course</p>
+                                <p style="font-size: 14px;margin-bottom: 15px; font-weight: 500; filter: blur(0.1px);">
+                                    Responsive HTML Email Template that you can build around.
+                                    Responsive HTML Email Template that you can build around.
+                                    Responsive HTML Email Template that you can build around.
+                                    Responsive HTML Email Template that you can build around.
+                                </p>
+                                 <button class="btn" style="background-color: black;">
+                                    <a href="https://github.com/ugwucollins" style="color: white;">View Course</a>
+                                 </button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="column4">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://imgbb.com/">
+                                    <img src="https://i.ibb.co/kSPykwQ/modern-white.png" 
+                                    style="width: 100%; max-width: 150px; margin-bottom: 18px;" 
+                                    alt="modern-white" border="0">
+                                </a>
+
+                                <p 
+                                style="font-size: 16px;font-weight: 400;
+                                 margin-bottom:25px; filter: blur(0.5px);">
+                                   Modern HTML Email
+                                </p>
+                                <p
+                                style="font-size: 16px;font-weight: 400;
+                                filter: blur(0.5px);">
+                                    123 sweet Road, city road
+                                </p>
+                                <p style="margin-top: 28px; filter: blur(0.1px);">
+                                <a 
+                                href="https://www.facebook.com/tonycollins.ugwu.18?mibextid=rS40aB7S9Ucbxw6v"
+                                class="tag">
+                                     <img src="https://i.ibb.co/QJrtCcK/facebook.png" alt="facebook" 
+                                    style="max-width: 35px;height: 40px;" class="icon2" border="0">
+                                </a>           
+
+                                <a 
+                                href="https://twitter.com/ugwu_somto5?t=b32VnJTFlyDSqqUnMx_eg&s=08"
+                                class="tag">
+                                   <img src="https://i.ibb.co/ryw6sjm/twitter.png" alt="twitter" class="icon2" border="0">
+                                </a>             
+
+                                <a href="#" class="tag">
+                                    <img src="https://i.ibb.co/zfL8mCk/youtube.png" alt="youtube" class="icon2" border="0">
+                                </a>    
+
+                                <a href="#" class="tag">
+                                    <img src="https://i.ibb.co/RytwfKQ/linked.png" alt="linked" class="icon2" border="0">
+                                </a> 
+
+                                <a 
+                                href="https://instagram.com/tonycollinsu?igshid=YWYwM2I1ZDdmOQ=="
+                                class="tag">
+                                    <img src="https://i.ibb.co/rxZLsHG/instargram.png" alt="instargram" class="icon2" border="0">
+                                </a> 
+                                </p>
+                                <p
+                                style="font-size: 16px;font-weight: 400;
+                                filter: blur(0.5px); margin-top: 20px;">
+                                    SUBSCRIBE
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
+    <!-- 
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/bshZVh1/home.png" alt="home" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/k8250Xq/images-2.png" alt="images-2" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/BTgT1c7/images.png" alt="images" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/0Gpw7c2/modern.png" alt="modern" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/kSPykwQ/modern-white.png" alt="modern-white" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/SJyP1Sm/mountain.jpg" alt="mountain" border="0"></a>
+
+    TRANSPARENT ICONS
+
+
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/QQ0VxCz/facebook2.png" alt="facebook2" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/MDBFZXv/twitter2.png" alt="twitter2" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/k2DLjN3/youtube2.png" alt="youtube2" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/9y4L0zQ/linked2.png" alt="linked2" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/YWprfpD/instargram.png" alt="instargram" border="0"></a>
+
+
+
+    Transparent White icons
+
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/QJrtCcK/facebook.png" alt="facebook" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/ryw6sjm/twitter.png" alt="twitter" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/zfL8mCk/youtube.png" alt="youtube" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/RytwfKQ/linked.png" alt="linked" border="0"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/rxZLsHG/instargram.png" alt="instargram" border="0"></a>
+
+
+
+-->
