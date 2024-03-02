@@ -5,52 +5,89 @@ body{
   overflow: hidden;
 }
 
-span{
-  background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-64.png");
-  width: 100px;
-  height: 100px;
+.img{
   position: absolute;
-  background-size: cover;
-  pointer-events: none;
-  top: 50%;
-  left:  50%;
-  transform: translate(-50%, -50%);
-  animation: animate 6s linear;
+  bottom: 20px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  animation: imgsall 3s linear forwards;
+}
+@keyframes imgsall {
+  0%{
+    left: -260px;
+  }
+}
+.imgs{
+  top: 70px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; 
+  box-shadow: 2px 3px 12px 2px rgba(211, 211, 211, 0.786);
+}
+.imgs:hover{
+  transform: scale(1.2);
+  transition:all 0.8s ease-in-out;
+  left: 10px;
+}
+@media (max-width:800px) {
+  .imgs{
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; 
+}
+}
+
+span{
+background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-64.png");
+width: 100px;
+height: 100px;
+position: absolute;
+background-size: cover;
+pointer-events: none;
+top: 50%;
+left:  50%;
+transform: translate(-50%, -50%);
+animation: animate 6s linear;
 }
 .ali{
-  text-align: end;
-  margin: 20px 40px 0px 0px;
-  color: lightgray;
-  animation: alis 15s 3 alternate forwards;
+text-align: end;
+margin: 20px 40px 0px 0px;
+color: lightgray;
+animation: alis 8s 1 alternate forwards;
 }
 .HB{
-  text-align: center;
-  margin: 50px auto;
-  color: lightgray;
-  animation:  happy 5s alternate forwards;
+text-align: center;
+margin-top: 50px ;
+margin: 0px 0px 30px 0px;
+color: lightgray;
+animation:  happy 5s alternate forwards;
 }
 @keyframes alis {
-  0%{
-    transform: translateY(-120px);
-  }
-  70%{
-    transform: translateX(50%);
-    background-color: gray;
-    padding: 10px 10px;
-    color: black;
-    }
-  100%{
-  transform: translateY(70%);
-  }
+0%{
+transform: translateY(-120px);
+}
+70%{
+transform: translateX(50%);
+background-color: gray;
+padding: 10px 10px;
+color: black;
+}
+100%{
+transform: translateY(70%);
+}
 }
 @keyframes happy {
-  0%{
-    transform: translateY(-280px);
-  }
-  100%{
-  transform: translateY(70%);
-  }
+0%{
+transform: translateY(-280px);
 }
+100%{
+transform: translateY(70%);
+}
+}
+
 
 @keyframes animate {
   0%{

@@ -12,6 +12,40 @@
   background: rgba(0, 0, 0, 0.835);
   overflow: hidden;
     }
+    .img{
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      animation: imgsall 3s linear forwards;
+    }
+    @keyframes imgsall {
+      0%{
+        left: -260px;
+      }
+    }
+    .imgs{
+      top: 70px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; 
+      box-shadow: 2px 3px 12px 2px rgba(211, 211, 211, 0.786);
+    }
+    .imgs:hover{
+      transform: scale(1.2);
+      transition:all 0.8s ease-in-out;
+      left: 10px;
+    }
+    @media (max-width:800px) {
+      .imgs{
+      margin-top: 30px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%; 
+    }
+    }
 
 span{
   background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-64.png");
@@ -29,11 +63,12 @@ span{
   text-align: end;
   margin: 20px 40px 0px 0px;
   color: lightgray;
-  animation: alis 15s 3 alternate forwards;
+  animation: alis 8s 1 alternate forwards;
 }
 .HB{
   text-align: center;
-  margin: 50px auto;
+  margin-top: 50px ;
+  margin: 0px 0px 30px 0px;
   color: lightgray;
   animation:  happy 5s alternate forwards;
 }
@@ -74,17 +109,23 @@ span{
 }
   </style>
 </head>
-<body>
-  <div class="ali">
-    <h1>Welcome To Your Page Ali Adaeze</h1>
-  </div>
-  <div class="HB">
-    <h1>Happy Birthday</h1>
-    <h1>To The Most Beautifull Girl Ever</h1>
-    <h2>Touch Your Screen</h2>
-  </div>
+<body class="body">
   
+  <main>  
+    <div class="ali">
+      <h1>Welcome To Your Page Ali Adaeze</h1>
+    </div>
+    <div class="HB">
+      <h1>Happy Birthday</h1>
+      <h1>To The Most Beautifull Girl Ever</h1>
+      <h2>Touch Your Screen</h2>
+    </div>
+    <div class="img">
+      <img src="ali.jpg" class="imgs" alt="Ali photo">
+    </div>
+  </main>
 <script>
+
   const bodyEl = document.querySelector("body");
 
 bodyEl.addEventListener("mousemove", (event) => {
@@ -97,11 +138,14 @@ bodyEl.addEventListener("mousemove", (event) => {
   const size = Math.random() * 100;
   spanEl.style.width = size + "px";
   spanEl.style.height = size + "px";
+  spanEl.style.backgroundColor ="yellow";
+  spanEl.style.borderRadius = "15px";
+
 
   bodyEl.appendChild(spanEl);
   setTimeout(() => {
     spanEl.remove();
-  },2000);
+  },1000);
 });
 
 </script>
